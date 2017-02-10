@@ -12,7 +12,7 @@ body{
 .wrapper {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 2px;
   margin: 0;
 }
 
@@ -24,8 +24,8 @@ body{
   background-image: @background-img;
   background-position: center center;
   border-radius: 4px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2px;
+  margin-bottom: 10px;
 
   h1{
     font-family: @ubuntu;
@@ -71,6 +71,9 @@ body{
     text-align: left;
     font-size: 1.2em;
   }
+  p {
+    padding: 0 10px;
+  }
 }
 
 .footer {
@@ -81,7 +84,7 @@ body{
   align-items: center;
   background-color: @footer-color;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 5px 0px;
   padding: 10px 30px;
 
   p {
@@ -109,10 +112,10 @@ body{
           box-shadow: 0 8px 6px -6px black;
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 940px) {
   .main {
     font-size: .7em;
-    margin: 10px 2px 20px 2px;
+    margin: 2px 0px 0px 0px;
   }
   .main-section {
     flex-direction: column;
@@ -122,7 +125,7 @@ body{
       flex-direction: column;
       flex: 0 1 100%;
       height: 100%;
-      margin: 5px;
+      margin: 5px 0px;
 
         img {
           float: left;
@@ -140,7 +143,7 @@ body{
 @media screen and (max-width: 630px) {
   .main {
     font-size: .7em;
-    margin: 10px 6px 20px 7px;
+    margin: 2px 0px 0px 0px;
   }
   .main-section {
     flex-direction: column;
@@ -150,7 +153,7 @@ body{
       display: flex;
       flex-direction: column;
       flex: 0 1 100%;
-      margin: 10px;
+      margin: 5px 0px;
       height: 100%;
 
       #card-img1,
@@ -158,20 +161,22 @@ body{
       #card-img3 {
         display: flex;
         flex-direction: column;
-        flex: 1 1 auto%;
+        flex: 1 1 auto;
         padding: 0;
       }
 
       .card-text {
-        font-size: .9em;
-        font-weight: 700;
+        font-size: 1.2em;
         padding: 0 15px;
         flex: 0 1 auto;
       }
+      p {
+        padding: 0 15px;
+      }
     }
   }
-
 }
+
 
 
 
